@@ -1,0 +1,254 @@
+.main-header {
+  background-image: image-url('ramen-header.jpg');
+  min-width: 1120px;
+  max-width: 1440px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.app-sub-title{
+  margin: 30px 0 30px 30px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px black;
+  font-size: 50px;
+}
+
+.app-info {
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px black;
+  font-size: 25px;
+}
+
+.main {
+  min-width: 1120px;
+  max-width: 1440px;
+  background: white;
+  font-family: arial unicode ms;
+  padding: 15px;
+  min-height: 100vh;
+}
+
+.main-contents {
+  width: 100%;
+}
+
+.area-contents {
+  background-color: rgb(50, 50, 50);
+  padding: 15px 15px 0 15px;
+  width: 100%;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.area-area-contents {
+  background-color: rgb(50, 50, 50);
+  padding: 15px 15px 0 15px;
+  width: 100%;
+  color: black;
+  margin-top: 15px;
+}
+
+.area-lists {
+  width: 100%;
+  border-bottom: white solid 1px;
+  padding-bottom: 10px;
+}
+
+.area-search {
+  color: white;
+  font-size: 22px;
+
+}
+
+.area {
+
+}
+
+.area-link {
+  text-decoration: none;
+  color: black;
+  :hover {
+    opacity: 0.8;
+    filter:alpha(opacity=70);
+    -ms-filter: “alpha( opacity=70 )”;
+    transition: 0.3s;
+  }
+}
+
+.prefecture {
+  margin-top: 15px;
+}
+
+.prefecture-contents {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  width: 200px;
+  border-bottom: grey solid 4px ;
+}
+
+.prefecture-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.prefecture-name {
+  font-size: 30px;
+}
+
+.city-lists {
+  margin-top: 15px;
+  display: flex;
+}
+
+.city-list {
+  background-color: white;
+  border-bottom: grey solid 4px ;
+  padding: 3px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.shops-contents {
+  background-color: rgb(50, 50, 50);
+  padding: 15px;
+  width: 100%;
+}
+
+.shops {
+  border-bottom: white solid 1px;
+  color: white;
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.shop-lists {
+  resize: none;
+  overflow: scroll;
+  max-height: 1000px;
+}
+
+.shop-link {
+  text-decoration: none;
+  color: black;
+  :hover {
+    opacity: 0.8;
+    filter:alpha(opacity=70);
+    -ms-filter: “alpha( opacity=70 )”;
+    transition: 0.3s;
+  }
+}
+
+.shop-contents {
+  margin-top: 15px;
+  background-color: white;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  height: 250px;
+  border-bottom: grey solid 4px ;
+}
+
+.shop-image {
+  width: 330px;
+  height: 220px;
+  margin-right: 15px;
+}
+
+.shop-information {
+  width: calc(100% - 15px - 330px);
+}
+
+.shop-top-contents {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-bottom: black solid 1px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.shop-name {
+  font-size: 28px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.shop-area {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.shop-bottom-contents {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.star-counts {
+  display: flex;
+  align-items: center;
+  margin: 5px 5px 5px 0;
+  font-weight: bold;
+  max-width: 100px;
+}
+
+.star-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 0.5vw;
+}
+
+.star-count {
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.latest-comment {
+
+}
+
+.title {
+  display: flex;
+}
+
+.latest-comment-title {
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.latest-comment-user {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+.latest-comment-text {
+  margin-left: 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 84px;
+}

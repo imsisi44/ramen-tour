@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  min-width: 1120px;
+  max-width: 1440px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: arial unicode ms;
+  background-color: rgb(50, 50, 50);
+}
+
+.top-contents {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.left-contents {
+  display: flex;
+  align-items: center;
+}
+
+.sub-header-contents {
+  display: flex;
+  align-items: center;
+}
+
+.right-contents {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.user-nickname {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+  border-bottom: grey solid 4px ;
+}
+
+.user-nickname:hover {
+  opacity: 0.8;
+  filter:alpha(opacity=70);
+  -ms-filter: “alpha( opacity=70 )”;
+  transition: 0.3s;
+}
+
+.logout {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: grey solid 4px ;
+}
+
+.logout:hover {
+  opacity: 0.8;
+  filter:alpha(opacity=70);
+  -ms-filter: “alpha( opacity=70 )”;
+  transition: 0.3s;
+}
+
+.login {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
+  margin-right: 15px;
+  border-bottom: grey solid 4px ;
+}
+
+.login:hover {
+  opacity: 0.8;
+  filter:alpha(opacity=70);
+  -ms-filter: “alpha( opacity=70 )”;
+  transition: 0.3s;
+}
+
+.sign-up {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: grey solid 4px ;
+}
+
+.sign-up:hover {
+  opacity: 0.8;
+  filter:alpha(opacity=70);
+  -ms-filter: “alpha( opacity=70 )”;
+  transition: 0.3s;
+}
+
+.search-bar-contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+.search-form>.input-box {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.search-button {
+  width: 40px;
+  border: black solid 1px;
+  cursor: pointer;
+  padding: 1px;
+}
+
+.search-button:hover {
+  opacity: 0.8;
+  filter:alpha(opacity=70);
+  -ms-filter: “alpha( opacity=70 )”;
+  transition: 0.3s;
+}
+
+.search-icon {
+  width: 100%;
+}

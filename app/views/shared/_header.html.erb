@@ -1,0 +1,26 @@
+<header class='top-page-header'>
+  <div class='top-contents'>
+    <%= link_to "/" do %>
+      <div class='left-contents'>
+        <%= image_tag "ramen-tour.jpg", class:'ramen-tour'%>
+      </div>
+    <% end %>
+    <ul class='right-contents'>
+      <% if user_signed_in? %>
+        <li><%= link_to current_user.nickname, user_path(current_user), class: "user-nickname" %> </li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+      <% else %>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class='search-bar-contents'>
+    <%= form_tag(search_path,:method => 'get', class:'search-form') do %>
+      <%= text_field_tag :search,"",  {class: "input-box"} %>
+      <button class="search-button">
+        <%= image_tag "search.png", class:"search-icon" %>
+      </button>
+    <% end %>
+  </div>
+</header>

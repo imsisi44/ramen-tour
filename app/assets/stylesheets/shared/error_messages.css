@@ -1,0 +1,14 @@
+.error-alert {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 14px;
+  list-style: none;
+  color: crimson;
+}
+
+.error-message {
+  font-size: 14px;
+  list-style: none;
+  color: crimson;
+}

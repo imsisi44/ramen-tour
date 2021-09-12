@@ -1,0 +1,22 @@
+<% if user_signed_in? %>
+  <% if current_user.favorites.find_by(shop_id: shop.id) %>
+    <%= link_to "/favorites/#{shop.id}/favorites", method: :delete, remote: true, class: "favorites-count", id: "favorite" do %>
+      <div class="star-counts">
+        <%= image_tag "red-star.png" ,class:"star-icon" %>
+        <span class="star-count"><%= shop.favorites.count %></span>
+      </div>
+    <% end %>
+  <% else %>
+    <%= link_to "/favorites/#{shop.id}/favorites", method: :post, remote: true, class: "favorites-count", id: "favorite" do %>
+      <div class="star-counts">
+        <%= image_tag "star.png" ,class:"star-icon" %>
+        <span class="star-count"><%= shop.favorites.count %></span>
+      </div>
+    <% end %>
+  <% end %>
+<% else %>
+  <div class="star-counts">
+    <%= image_tag "star.png" ,class:"star-icon" %>
+    <span class="star-count"><%= shop.favorites.count %></span>
+  </div>
+<% end %>

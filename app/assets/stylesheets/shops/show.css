@@ -1,0 +1,256 @@
+.shop-page {
+  display: flex;
+  background-color: rgb(50, 50, 50);
+  padding: 15px;
+  width: 100%;
+  color: black;
+  word-break : break-all;
+}
+
+.shop-left-contents {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  width: 70%;
+  border-right: black solid 1px;
+}
+
+.shop-page-top {
+  width: 100%;
+  border-bottom: black solid 1px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.counts {
+  display: flex;
+}
+
+.favorites-count {
+  text-decoration: none;
+  color: black;
+}
+
+.shop-page-main {
+
+}
+
+.shop-page-images {
+}
+
+.main-img {
+  height: 400px;
+  margin-bottom: 5px;
+}
+
+.main-image {
+  width: 660px;
+  height: 400px;
+}
+
+.sub-images {
+  display: flex;
+}
+
+.sub-image-list {
+  height: 100px;
+}
+
+.sub-image {
+  width: 128px;
+  height: 100px;
+  margin-right: 5px;
+}
+
+.sub-image:hover {
+  opacity: 0.8;
+  filter:alpha(opacity=70);
+  -ms-filter: “alpha( opacity=70 )”;
+  transition: 0.3s;
+}
+
+.sub-image2 {
+  width: 128px;
+  height: 100px;
+}
+
+.sub-image2:hover {
+  opacity: 0.8;
+  filter:alpha(opacity=70);
+  -ms-filter: “alpha( opacity=70 )”;
+  transition: 0.3s;
+}
+
+.sub-image5 {
+  width: 128px;
+  height: 100px;
+}
+
+.shop-right-contents {
+  background-color: rgb(50, 50, 50);
+  width: 100%;
+  padding-left: 15px;
+}
+
+.area-shops {
+  width: 100%;
+  border-bottom: white solid 1px;
+  color: white;
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+
+.area-shop-lists {
+  resize: none;
+  overflow: scroll;
+  height: 593px;
+}
+
+.area-shop-contents {
+  margin-top: 15px;
+  background-color: white;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  height: 150px;
+  border-bottom: grey solid 4px ;
+}
+
+.area-shop-image {
+  width: 150px;
+  height: 120px;
+  margin-right: 15px;
+}
+
+.area-shop-information {
+  
+}
+
+.area-shop-name {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  height: 60%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.map-contents {
+  background-color: rgb(50, 50, 50);
+  padding: 0 15px 15px 15px;
+}
+
+.shop-address-map {
+  font-size: 16px;
+  background-color: white;
+}
+
+.address {
+  display: flex;
+  width: 100%;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+  border-right: black solid 1px;
+  max-height: 50px;
+}
+
+.area {
+  display: flex;
+  width: 100%;
+  border: black solid 1px;
+}
+
+.shop-page-address {
+  width: 75px;
+  border-right: black solid 1px;
+  padding: 5px;
+}
+
+.shop-area {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.shop-address {
+  word-break : break-all;
+  padding: 5px;
+}
+
+.phone-number {
+  display: flex;
+  width: 100%;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+  border-right: black solid 1px;
+  overflow: hidden;
+  max-height: 50px;
+  margin-bottom: 15px;
+}
+
+.shop-page-phone-number {
+  width: 75px;
+  border-right: black solid 1px;
+  padding: 5px;
+}
+
+.shop-phone-number {
+  padding: 5px;
+}
+
+.map {
+
+}
+
+.comment-contents {
+  background-color: rgb(50, 50, 50);
+  padding: 0 15px 15px 15px;
+}
+
+.comments-list {
+  width: 100%;
+  margin-top: 15px;
+  display: block;
+}
+
+.comment-lists {
+ list-style: none;
+}
+
+.comments-contents {
+  width: 100%;
+  padding: 5px;
+  border: black solid 1px;
+  margin-top: 15px;
+  background-color: white;
+}
+
+.comment_user{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.comment_title{
+  font-size:20px;
+  font-weight: bold;
+}
+
+.comment_text {
+  font-size: 16px;
+}
+
+
+.comment-btn {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: grey solid 4px ;
+}
+
+.delete-btn {
+  color: gray
+}
+
+
+

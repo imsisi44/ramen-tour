@@ -1,0 +1,23 @@
+.footer {
+  min-width: 1120px;
+  max-width: 1440px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: arial unicode ms;
+  background-color: rgb(50, 50, 50);
+}
+
+
+.footer-contents {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-logo-contents {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,118 @@
+<div class='main-header'>
+  <%= render "shared/header" %>
+  <h2 class='app-sub-title'>ラーメン巡り</h2>
+  <p class='app-info'>ラーメンツアーでは<br>
+  山口と福岡のラーメン屋を紹介しています。</p>
+</div>
+<div class='main'>
+  <div class='main-contents'>
+
+    <div class='area-contents'>
+      <div class='area-lists'>
+        <h2 class='area-search'>エリアから探す</h2>
+      </div>
+      <div class='areas'>
+        <div class='prefecture'>
+          <%= link_to area_path(@yamaguchi), class: 'area-link' do %>
+            <div class='prefecture-contents'>
+              <%= image_tag 'yamaguchi.jpg', class: 'prefecture-image' %>
+              <div class='prefecture-name'>
+                <%= @yamaguchi.name %>
+              </div>
+            </div>
+          <% end %>
+          <ul class='city-lists'>
+            <% @yamaguchi.children.each do |area| %>
+              <%= link_to area_path(area), class: 'area-link' do %>
+                <li class='city-list'><%= area.name %></li>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div class='areas'>
+        <div class='prefecture'>
+          <%= link_to area_path(@fukuoka), class: 'area-link' do %>
+            <div class='prefecture-contents'>
+              <%= image_tag 'yamaguchi.jpg', class: 'prefecture-image' %>
+              <div class='prefecture-name'>
+                <%= @fukuoka.name %>
+              </div>
+            </div>
+          <% end %>
+          <ul class='city-lists'>
+            <% @fukuoka.children.each do |area| %>
+              <%= link_to area_path(area), class: 'area-link' do %>
+                <li class='city-list'><%= area.name %></li>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class='shops-contents'>
+      <h2 class='shops'>人気ラーメン店</h2>
+      <ul class='shop-lists'>
+        <% @shops.each do |shop| %>
+          <li class='shop-list'>
+            <%= link_to shop_path(shop), class: 'shop-link' do%>
+              <div class='shop-contents'>
+                <%= image_tag shop.image1.to_s, class: 'shop-image'%>
+                <div class='shop-information'>
+                  <div class='shop-top-contents'>
+                    <h3 class='shop-name'>
+                      <%= shop.name %>
+                    </h3>
+                    <p class='shop-area'>
+                      <%= shop.area.name %>
+                    </p>
+                    <% if user_signed_in? %>
+                      <% if current_user.favorites.find_by(shop_id: shop.id) %>
+                        <div class="star-counts">
+                          <%= image_tag "red-star.png" ,class:"star-icon" %>
+                         <span class="star-count"><%= shop.favorites.count %></span>
+                        </div>
+                      <% else %>
+                        <div class="star-counts">
+                          <%= image_tag "star.png" ,class:"star-icon" %>
+                          <span class="star-count"><%= shop.favorites.count %></span>
+                        </div>
+                      <% end %>
+                    <% else %>
+                      <div class="star-counts">
+                        <%= image_tag "star.png" ,class:"star-icon" %>
+                        <span class="star-count"><%= shop.favorites.count %></span>
+                      </div>
+                    <% end %>
+                  </div>
+                  <div class='shop-bottom-contents'>
+                    <div class='latest-comment'>
+                      <% shop.comments.each.with_index do |comment, i|%>
+                        <% if i == shop.comments.size - 1 %>
+                          <div class='title'>
+                            <h4 class='latest-comment-title'>
+                              <%=comment.title%>
+                            </h4>
+                            <p class='latest-comment-user'>
+                              by <%= comment.user.nickname %>
+                            </p>
+                          </div>
+                          <p class='latest-comment-text'>
+                            <%= comment.text %>
+                          </p>
+                        <% end %>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer"%>

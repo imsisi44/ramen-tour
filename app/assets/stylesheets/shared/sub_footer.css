@@ -1,0 +1,9 @@
+.sub-footer {
+  width: 100vw;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: arial unicode ms;
+  background-color: rgb(50, 50, 50);
+}
+

@@ -1,0 +1,26 @@
+<div class="comment-box">
+  <% if user_signed_in? %>
+    <%= form_with model: [@shop, @comment], remote: true do |f| %>
+      <div class='comment-input'>
+        <div class="comment-text">
+          <%= f.text_field :text, placeholder: "コメント"%>
+        </div>
+        <button type="submit" class="comment-btn">
+          <%= image_tag "comment.png" ,class:"comment-icon" ,width:"40",height:"30"%>
+        </button>
+      </div>
+    <% end %>
+  <% else %>
+    <p class='comment-info'>
+      ※ コメントするには新規登録、ログインしてください
+    </p>
+  <% end %>
+  <ul class="comments-lists"> 
+    <% @comments.each do |comment| %>
+      <li class="comments-list">
+        <p class='comment_user'><%= comment.user.nickname %></p>
+        <p class='comment_user_text'><%= comment.text %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

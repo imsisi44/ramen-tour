@@ -1,0 +1,16 @@
+.sub-header {
+  width: 100vw;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: arial unicode ms;
+  background-color: rgb(50, 50, 50);
+}
+
+.sub-top-contents {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}

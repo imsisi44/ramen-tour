@@ -1,0 +1,49 @@
+= render "shared/sub_header"
+
+= form_for [@shop, @comment] do |f| 
+  .registration-main
+    .form-page
+      .form-wrap
+        .form-header
+          %h1.form-header-text
+            レビュー投稿
+
+        = render 'shared/error_messages', model: f.object
+
+        .form-group
+          .form-text-wrap
+            %label.form-text
+              評価
+          .rate#star
+            = f.hidden_field :rate, id: :review_star
+
+        :javascript
+          $('#star').raty({
+            size: 36,
+            starOff: "#{asset_path('star-off.png')}",
+            starOn: "#{asset_path('star-on.png')}",
+            starHalf: "#{asset_path('star-half.png')}",
+            scoreName: 'comment[rate]',
+            half: true, 
+          });
+
+        .form-group
+          .form-text-wrap
+            %label.form-text
+              タイトル
+
+          = f.text_area :title, class:"input-default", maxlength:"40"
+
+        .form-group
+          .form-text-wrap
+            %label.form-text
+              口コミ
+          
+          = f.text_area :text, class:"input-comment", maxlength: "1000"
+       
+
+        .register-btn
+          = f.submit "投稿" ,class:"register-color-btn"
+
+
+= render "shared/sub_footer"

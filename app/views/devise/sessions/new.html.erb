@@ -1,0 +1,37 @@
+<%= render "shared/sub_header"%>
+
+<%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
+  <div class='form-page'>
+    <div class='form-wrap'>
+      <div class='form-header'>
+        <h1 class='form-header-text'>
+          会員情報入力
+        </h1>
+      </div>
+
+      <%- flash.each do |name, msg| -%>
+        <div class='error-alert'>
+          <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+        </div>
+      <%- end -%>  
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">メールアドレス</label>
+        </div>
+        <%= f.email_field :email, class:"input-default", id:"email", placeholder:"ramentour@com", autofocus: true %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">パスワード</label>
+        </div>
+        <%= f.password_field :password, class:"input-default", id:"password", placeholder:"••••••" %>
+      </div>
+      <div class='register-btn'>
+        <%= f.submit "ログイン" ,class:"register-color-btn" %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<%= render "shared/sub_footer"%>
