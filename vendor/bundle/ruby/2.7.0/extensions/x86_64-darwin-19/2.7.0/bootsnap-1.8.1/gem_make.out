@@ -1,0 +1,15 @@
+current directory: /Users/ss/projects/ramen-tour/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+/Users/ss/.rbenv/versions/2.7.2/bin/ruby -I /Users/ss/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210913-47771-1ec3m5n.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ss/projects/ramen-tour/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/ss/projects/ramen-tour/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/ss/projects/ramen-tour/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210913-47771-16n3rsj/bootsnap
