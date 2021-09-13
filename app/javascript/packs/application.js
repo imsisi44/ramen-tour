@@ -9,7 +9,6 @@ require("@rails/activestorage").start();
 require("channels");
 window.$ = window.jQuery = require('jquery'); 
 require('packs/raty')
-require('packs/image')
 
 Rails.start()
 Turbolinks.start()
