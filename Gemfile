@@ -72,3 +72,5 @@ gem 'ancestry'
 group :production do
   gem 'pg'
 end
+
+gem 'puma', '~> 3.7'
