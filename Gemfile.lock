@@ -297,7 +297,6 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-darwin-19
   x86_64-darwin-20
   x86_64-linux
 
@@ -313,6 +312,7 @@ DEPENDENCIES
   geocoder
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
+  jquery-rails
   listen (~> 3.3)
   mini_magick
   mysql2 (~> 0.5)
