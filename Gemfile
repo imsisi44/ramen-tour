@@ -72,8 +72,3 @@ gem 'ancestry'
 group :production do
   gem 'pg'
 end
-
-group :development, :production, :test do
-  gem 'devise'
-  gem 'jquery-rails'
-end
